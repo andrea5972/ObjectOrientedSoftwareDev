@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=${charset}"/>
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+    <link rel="stylesheet" href="style.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+
+    <title>Clover</title>
+</head>
+
+<body style="min-width: 200px;">
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of the projects overall coverage.">Coverage</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <span>
+                    2 classes,
+                    0 /
+                    47 elements
+                </span>
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A summary of results of all tests that were run.">Test results</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:testresults'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                <span>
+                    0 / 0 tests
+                    (0 secs)
+                </span>
+                                        <div class="aui-message aui-message-warning">
+        <p class="title">
+            <strong>No test results</strong>
+        </p>
+        <p>No test results could be found. Please ensure that you have instrumented your unit tests correctly.</p>
+    </div>
+                            </div>
+        </div>
+
+    
+    
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex packages in the project.">Most complex packages</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td><a class="tag" href="javapkg:midterm">midterm</a> (15)</td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="The most complex classes in the project.">Most complex classes</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:coverage'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            
+                                                <tr><td>1. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/midterm/Inventory.java#6_14"  title="midterm.Inventory">Inventory</a>
+                            (8)
+                        </td></tr>
+                                            
+                                                <tr><td>2. </td><td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td><td>
+                            <a  class="tag" href="javaclass:/midterm/InventoryItem.java#3_14"  title="midterm.InventoryItem">InventoryItem</a>
+                            (7)
+                        </td></tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of classes that have the highest complexity and least coverage. These pose the greatest potential risk to the project.">
+                        Top 2 project risks</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:toprisks'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div>
+                    
+                                                                            <a class="tag" href="javaclass:/midterm/Inventory.java#6_14"
+                               style="font-size: 25px;color:#d04437"
+                               title="Average Method Complexity - 1.333 , Coverage - 0% ">Inventory</a>
+                                            
+                                                                            <a class="tag" href="javaclass:/midterm/InventoryItem.java#3_14"
+                               style="font-size: 22px;color:#d04437"
+                               title="Average Method Complexity - 1.167 , Coverage - 0% ">InventoryItem</a>
+                                                            </div>
+            </div>
+        </div>
+
+            <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    <label title="A list of methods least tested, ranked in decreasing complexity.">Least tested methods</label>
+                    <label class="aui-button aui-button-subtle" onclick="self.location='cloverview:quickwins'">
+                        <span class="aui-icon aui-icon-small aui-iconfont-arrows-right"></span>
+                    </label>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table>
+                                            <tr>
+                            <td align="right">1.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.addItemToInventory(InventoryItem)&#160;:&#160;boolean" href="javamethod:/midterm/Inventory.java#15_2">Inventory.addItemToInventory(<wbr>InventoryItem)<wbr>&#160;:&#160;boolean</a> (2)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">2.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.dropInventoryItem(InventoryItem)&#160;:&#160;boolean" href="javamethod:/midterm/Inventory.java#26_2">Inventory.dropInventoryItem(<wbr>InventoryItem)<wbr>&#160;:&#160;boolean</a> (2)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">3.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.toString()&#160;:&#160;String" href="javamethod:/midterm/InventoryItem.java#21_2">InventoryItem.toString(<wbr>)<wbr>&#160;:&#160;String</a> (2)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">4.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.toString()&#160;:&#160;String" href="javamethod:/midterm/Inventory.java#36_2">Inventory.toString(<wbr>)<wbr>&#160;:&#160;String</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">5.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.InventoryItem(String,int,String,int)" href="javamethod:/midterm/InventoryItem.java#9_2">InventoryItem.InventoryItem(<wbr>String,<wbr>int,<wbr>String,<wbr>int)<wbr></a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">6.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.Inventory()" href="javamethod:/midterm/Inventory.java#10_2">Inventory.Inventory(<wbr>)<wbr></a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">7.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.getWeight()&#160;:&#160;int" href="javamethod:/midterm/Inventory.java#34_2">Inventory.getWeight(<wbr>)<wbr>&#160;:&#160;int</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">8.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="Inventory.getCount()&#160;:&#160;int" href="javamethod:/midterm/Inventory.java#35_2">Inventory.getCount(<wbr>)<wbr>&#160;:&#160;int</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">9.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.getName()&#160;:&#160;String" href="javamethod:/midterm/InventoryItem.java#16_2">InventoryItem.getName(<wbr>)<wbr>&#160;:&#160;String</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">10.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.getType()&#160;:&#160;String" href="javamethod:/midterm/InventoryItem.java#17_2">InventoryItem.getType(<wbr>)<wbr>&#160;:&#160;String</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">11.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.getWeight()&#160;:&#160;int" href="javamethod:/midterm/InventoryItem.java#18_2">InventoryItem.getWeight(<wbr>)<wbr>&#160;:&#160;int</a> (1)
+                            </td>
+                        </tr>
+                                            <tr>
+                            <td align="right">12.</td>
+                            <td align="right">0%</td>
+                            <td style="padding-left:25px; text-indent:-25px;">                                <a class="tag" title="InventoryItem.getCount()&#160;:&#160;int" href="javamethod:/midterm/InventoryItem.java#19_2">InventoryItem.getCount(<wbr>)<wbr>&#160;:&#160;int</a> (1)
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+</body>
+</html>
