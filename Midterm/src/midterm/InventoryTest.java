@@ -1,8 +1,6 @@
 package midterm;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.Test;
 
 class InventoryTest {
@@ -56,18 +54,4 @@ class InventoryTest {
 		inventory.dropInventoryItem(inventoryItem2);
 		assertEquals(inventory.getCount(), 1);
 	}
-
-	@Test
-	void testToString() {
-		Inventory inventory = new Inventory();
-		InventoryItem inventoryItem1 = mock(InventoryItem.class);
-		InventoryItem inventoryItem2 = new InventoryItem("Type", 20, "Long item name", 1);
-		inventory.addItemToInventory(inventoryItem1);
-		inventory.addItemToInventory(inventoryItem2);
-		InventoryItem spyInventoryItem2 = spy(inventoryItem2);
-		when(inventoryItem1.toString()).thenReturn("item1 string");
-		when(spyInventoryItem2.toString()).thenReturn("item2 string");
-		assertEquals("Your inventory has:\n" + inventoryItem1.toString() + inventoryItem2.toString(), inventory.toString());
-	}
-
 }
